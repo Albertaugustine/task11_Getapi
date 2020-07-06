@@ -1,6 +1,6 @@
-var fetch = angular.module("listData", []);
+var fetch = angular.module("myApp", []);
 
-fetch.controller("showData", [
+fetch.controller("myCtrl", [
   "$scope",
   "$http",
   function ($scope, $http) {
