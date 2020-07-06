@@ -1,12 +1,14 @@
-var fetch = angular.module("myApp", []);
+var fetch = angular.module("listData", []);
 
-fetch.controller("myCtrl", [
-  "$scope", "$http",
+fetch.controller("showData", [
+  "$scope",
+  "$http",
   function ($scope, $http) {
     $http({
       method: "get",
-      url: "api/add_data.php",
+      url: "api/getdata.php",
     }).then(function successCallback(response) {
+      // Store response data
       $scope.names = response.data;
     });
   },
