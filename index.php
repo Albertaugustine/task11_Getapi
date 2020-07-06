@@ -38,7 +38,7 @@
                             <th>Age</th>
                             <th>Branch</th>
                         </tr>
-                        <tr ng-repeat="x in output">
+                        <tr ng-repeat="x in names">
                             <td><label>{{x.ID}}</label></td>                            
                             <td><label>{{x.Name}}</label></td>
                             <td><label>{{x.listitem}}</label></td>
